@@ -1,0 +1,23 @@
+{
+	"type"              : "lib",
+	"template"          : "clean",
+	"pm"                : "bun",
+	"repo": {
+		"org"           : "cruxkit",
+		"name"          : "core",
+		"version"       : "0.0.1",
+		"desc"          : "A complete component library built with pure @minejs/jsx and styled with @mineui semantic tokens.",
+		"kw"            : ["cruxjs", "kit", "jsx", "ui", "components", "typescript"],
+		"license"       : "MIT",
+		"issues"        : "https://github.com/cruxkit/core/issues",
+		"homepage"      : "https://github.com/cruxkit/core#readme",
+		"git_url"       : "git+https://github.com/cruxkit/core.git"
+	},
+	"author": {
+		"id"            : "maysara-elshewehy",
+		"name"          : "Maysara",
+		"email"         : "maysara.elshewehy@gmail.com",
+		"url"           : "https://github.com/maysara-elshewehy"
+	},
+	"createdAt"         : "2026-01-08T03:22:49.594Z"
+}
