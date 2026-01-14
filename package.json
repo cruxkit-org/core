@@ -1,12 +1,12 @@
 {
 	"name"                             : "@cruxkit/core",
-	"version"                          : "0.0.1",
+	"version"                          : "0.0.2",
 	"description"                      : "A complete component library built with pure @minejs/jsx and styled with @mineui semantic tokens.",
 	"keywords"                         : ["cruxjs", "kit", "jsx", "ui", "components", "typescript"],
 	"license"                          : "MIT",
-	"homepage"                         : "https://github.com/cruxkit/core#readme",
+	"homepage"                         : "https://github.com/cruxkit-org/core#readme",
 	"bugs": {
-		"url"                          : "https://github.com/cruxkit/core/issues"
+		"url"                          : "https://github.com/cruxkit-org/core/issues"
 	},
 	"author": {
 		"name"                         : "Maysara",
@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type"                         : "git",
-		"url"                          : "git+https://github.com/cruxkit/core.git"
+		"url"                          : "git+https://github.com/cruxkit-org/core.git"
 	},
 	"type"                             : "module",
 	"main"                             : "./dist/index.js",
