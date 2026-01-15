@@ -188,65 +188,6 @@
     }
 
     // ============================================================================
-    // THEME HOOK
-    // ============================================================================
-
-    export type Theme = 'light' | 'dark';
-
-    /**
-     * Manage theme state and persistence
-     */
-    export function useTheme() {
-        // Get initial theme from localStorage or system preference
-        const getInitialTheme = (): Theme => {
-            const saved = localStorage.getItem('theme') as Theme;
-            if (saved) return saved;
-
-            return window.matchMedia('(prefers-color-scheme: dark)').matches
-                ? 'dark'
-                : 'light';
-        };
-
-        const theme = signal<Theme>(getInitialTheme());
-
-        // Update DOM and localStorage when theme changes
-        effect(() => {
-            const currentTheme = theme();
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            localStorage.setItem('theme', currentTheme);
-        });
-
-        // Listen for system theme changes
-        effect(() => {
-            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-            const handleChange = (e: MediaQueryListEvent) => {
-                if (!localStorage.getItem('theme')) {
-                    theme.set(e.matches ? 'dark' : 'light');
-                }
-            };
-
-            mediaQuery.addEventListener('change', handleChange);
-
-            return () => {
-                mediaQuery.removeEventListener('change', handleChange);
-            };
-        });
-
-        const toggle = () => {
-            theme.set(theme() === 'light' ? 'dark' : 'light');
-        };
-
-        return {
-            theme,
-            setTheme: (value: Theme) => theme.set(value),
-            toggle,
-            isDark: () => theme() === 'dark',
-            isLight: () => theme() === 'light'
-        };
-    }
-
-    // ============================================================================
     // BREAKPOINT HOOK
     // ============================================================================
 
@@ -508,8 +449,7 @@
         useOutsideClick,
         useEscapeKey,
 
-        // Theme & Layout
-        useTheme,
+        // Layout
         useBreakpoint,
         useMediaQuery,
         useDirection,

@@ -37,12 +37,12 @@
     }
 
     export interface CardBodyProps {
-        children: JSXElement;
+        children: JSXElement | JSXElement[];
         class?: string;
     }
 
     export interface CardFooterProps {
-        children: JSXElement;
+        children: JSXElement | JSXElement[];
         class?: string;
         divider?: boolean;
     }

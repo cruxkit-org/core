@@ -1,8 +1,15 @@
 {
 	"name"                             : "@cruxkit/core",
-	"version"                          : "0.0.2",
+	"version"                          : "0.0.3",
 	"description"                      : "A complete component library built with pure @minejs/jsx and styled with @mineui semantic tokens.",
-	"keywords"                         : ["cruxjs", "kit", "jsx", "ui", "components", "typescript"],
+	"keywords"                         : [
+		"cruxjs",
+		"kit",
+		"jsx",
+		"ui",
+		"components",
+		"typescript"
+	],
 	"license"                          : "MIT",
 	"homepage"                         : "https://github.com/cruxkit-org/core#readme",
 	"bugs": {

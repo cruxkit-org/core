@@ -5,7 +5,7 @@
 	"repo": {
 		"org"           : "cruxkit",
 		"name"          : "core",
-		"version"       : "0.0.2",
+		"version"       : "0.0.3",
 		"desc"          : "A complete component library built with pure @minejs/jsx and styled with @mineui semantic tokens.",
 		"kw"            : ["cruxjs", "kit", "jsx", "ui", "components", "typescript"],
 		"license"       : "MIT",

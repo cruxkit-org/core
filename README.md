@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.0.2-black"/>
+    <img src="https://img.shields.io/badge/v-0.0.3-black"/>
     <a href="https://github.com/cruxkit-org"><img src="https://img.shields.io/badge/🔥-@cruxkit-black"/></a>
     <br>
     <img src="https://img.shields.io/github/issues/cruxkit-org/core?style=flat" alt="Github Repo Issues" />
@@ -39,8 +39,6 @@
         > • **Full TypeScript support** with IntelliSense
         >
         > • **Accessible UI** with ARIA attributes and keyboard navigation
-        >
-        > • **Theme flexibility** with [@mineui](https://github.com/mineui-org) semantic CSS variables
         >
         > • **Reactive state** powered by [@minejs/signals](https://github.com/minejs-org/signals)
         >

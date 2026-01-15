@@ -40,17 +40,6 @@ declare function useOutsideClick(ref: {
  * Detect escape key press
  */
 declare function useEscapeKey(callback: () => void): void;
-type Theme = 'light' | 'dark';
-/**
- * Manage theme state and persistence
- */
-declare function useTheme(): {
-    theme: _minejs_signals.Signal<Theme>;
-    setTheme: (value: Theme) => void;
-    toggle: () => void;
-    isDark: () => boolean;
-    isLight: () => boolean;
-};
 type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 /**
  * Get current breakpoint
@@ -719,11 +708,11 @@ interface CardHeaderProps {
     divider?: boolean;
 }
 interface CardBodyProps {
-    children: JSXElement;
+    children: JSXElement | JSXElement[];
     class?: string;
 }
 interface CardFooterProps {
-    children: JSXElement;
+    children: JSXElement | JSXElement[];
     class?: string;
     divider?: boolean;
 }
@@ -825,4 +814,4 @@ interface StatProps {
 }
 declare function Stat(props: StatProps): JSXElement;
 
-export { Alert, type AlertProps, Avatar, AvatarGroup, type AvatarGroupProps, type AvatarProps, Badge, type BadgeProps, Box, type BoxProps, Breadcrumb, type BreadcrumbItem, type BreadcrumbProps, type Breakpoint, Button, ButtonGroup, type ButtonGroupProps, type ButtonProps, Card, CardBody, type CardBodyProps, CardFooter, type CardFooterProps, CardHeader, type CardHeaderProps, type CardProps, Center, type CenterProps, Checkbox, type CheckboxProps, Container, type ContainerProps, Divider, type DividerProps, Drawer, type DrawerProps, DropdownMenu, type DropdownMenuItemProps, type DropdownMenuProps, Form, FormError, type FormErrorProps, FormField, type FormFieldProps, FormHint, type FormHintProps, FormLabel, type FormLabelProps, type FormProps, Grid, type GridProps, Group, type GroupProps, IconButton, type IconButtonProps, Input, InputGroup, type InputGroupProps, type InputProps, List, type ListItem, type ListProps, Modal, type ModalProps, Nav, type NavItem, type NavProps, Notification, type NotificationProps, Pagination, type PaginationProps, Popover, type PopoverProps, Portal, Progress, type ProgressProps, Radio, RadioGroup, type RadioGroupProps, type RadioProps, Select, type SelectOption, type SelectProps, Skeleton, type SkeletonProps, Slider, type SliderProps, Spacer, type SpacerProps, Spinner, type SpinnerProps, Stack, type StackProps, Stat, type StatProps, Switch, type SwitchProps, type TabItem, Table, TableBody, type TableBodyProps, type TableColumn, TableHeader, type TableHeaderProps, type TableProps, Tabs, type TabsProps, Tag, type TagProps, Text, type TextProps, Textarea, type TextareaProps, type Theme, Toast, type ToastProps, Tooltip, type TooltipProps, clsx, cn, copyToClipboard, createPortal, debounce, throttle, useBreakpoint, useClipboard, useDirection, useEscapeKey, useFocusTrap, useId, useMediaQuery, useOutsideClick, useReturnFocus, useScrollLock, useTheme };
+export { Alert, type AlertProps, Avatar, AvatarGroup, type AvatarGroupProps, type AvatarProps, Badge, type BadgeProps, Box, type BoxProps, Breadcrumb, type BreadcrumbItem, type BreadcrumbProps, type Breakpoint, Button, ButtonGroup, type ButtonGroupProps, type ButtonProps, Card, CardBody, type CardBodyProps, CardFooter, type CardFooterProps, CardHeader, type CardHeaderProps, type CardProps, Center, type CenterProps, Checkbox, type CheckboxProps, Container, type ContainerProps, Divider, type DividerProps, Drawer, type DrawerProps, DropdownMenu, type DropdownMenuItemProps, type DropdownMenuProps, Form, FormError, type FormErrorProps, FormField, type FormFieldProps, FormHint, type FormHintProps, FormLabel, type FormLabelProps, type FormProps, Grid, type GridProps, Group, type GroupProps, IconButton, type IconButtonProps, Input, InputGroup, type InputGroupProps, type InputProps, List, type ListItem, type ListProps, Modal, type ModalProps, Nav, type NavItem, type NavProps, Notification, type NotificationProps, Pagination, type PaginationProps, Popover, type PopoverProps, Portal, Progress, type ProgressProps, Radio, RadioGroup, type RadioGroupProps, type RadioProps, Select, type SelectOption, type SelectProps, Skeleton, type SkeletonProps, Slider, type SliderProps, Spacer, type SpacerProps, Spinner, type SpinnerProps, Stack, type StackProps, Stat, type StatProps, Switch, type SwitchProps, type TabItem, Table, TableBody, type TableBodyProps, type TableColumn, TableHeader, type TableHeaderProps, type TableProps, Tabs, type TabsProps, Tag, type TagProps, Text, type TextProps, Textarea, type TextareaProps, Toast, type ToastProps, Tooltip, type TooltipProps, clsx, cn, copyToClipboard, createPortal, debounce, throttle, useBreakpoint, useClipboard, useDirection, useEscapeKey, useFocusTrap, useId, useMediaQuery, useOutsideClick, useReturnFocus, useScrollLock };
